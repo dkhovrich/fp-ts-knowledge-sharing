@@ -2,6 +2,8 @@ import {pipe, tuple, tupled} from "fp-ts/function";
 import * as RE from "fp-ts-contrib/RegExp";
 import * as O from "fp-ts/Option";
 
+// https://gcanti.github.io/fp-ts-contrib/modules/RegExp.ts.html#match
+
 type Recipient = {
     id: string;
     name: string;
