@@ -1,6 +1,5 @@
-import {contramap, eqDate, eqNumber, eqString, getMonoid, getStructEq} from "fp-ts/Eq";
+import {contramap, eqDate, eqNumber, eqString, getStructEq} from "fp-ts/Eq";
 import {getEq} from "fp-ts/ReadonlyArray";
-import {fold} from "fp-ts/Monoid";
 
 type Avatar = {
     initials: string;
