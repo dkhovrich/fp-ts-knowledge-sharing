@@ -19,7 +19,7 @@ const createRecipient = (name: string, email: string): Recipient => ({
 const pattern = new RegExp(`["']?(.*[^\\s"'])["']?\\s+[<("'](.+)[>)"']`);
 
 const r1 = pipe(
-    "Dmitriy Khovrich <dkhovrich@readdle.com>",
+    "Peter Parker <spiderman@gmail.com>",
     RE.match(pattern),
     O.map(([, name, email]) => tuple(name, email)),
     O.map(tupled(createRecipient)),
